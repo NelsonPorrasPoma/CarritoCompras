@@ -1,0 +1,122 @@
+/* Variables */
+/* Sección Nosotros */
+#nosotros {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  margin-top: 30px;
+  border-top: 5px solid #004aad;
+}
+.contenido-nosotros {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.seccion-nosotros {
+  margin-bottom: 30px;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.seccion-nosotros:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.seccion-nosotros h2 {
+  color: #004aad;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  border-bottom: 3px solid #ff6f61;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.equipo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.miembro-equipo {
+  flex: 1 1 calc(33.333% - 20px);
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s, background-color 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.miembro-equipo:hover {
+  transform: translateY(-10px);
+  background-color: #ffffff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.miembro-equipo img {
+  max-width: 120px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+.miembro-equipo img:hover {
+  transform: rotate(360deg);
+}
+.miembro-equipo h4 {
+  margin: 10px 0 5px;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.miembro-equipo p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+/* Animación para mostrar los elementos */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.seccion-nosotros {
+  animation: fadeIn 0.6s ease-in-out;
+}
+.miembro-equipo {
+  animation: fadeIn 0.8s ease-in-out;
+}
+/* Estilos responsivos */
+@media (max-width: 1024px) {
+  .miembro-equipo {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+@media (max-width: 768px) {
+  .miembro-equipo {
+    flex: 1 1 calc(100% - 20px);
+  }
+  .seccion-nosotros h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  #nosotros {
+    padding: 20px 10px;
+  }
+  .seccion-nosotros {
+    padding: 20px;
+  }
+  .miembro-equipo img {
+    max-width: 80px;
+  }
+  .miembro-equipo h4 {
+    font-size: 1rem;
+  }
+}

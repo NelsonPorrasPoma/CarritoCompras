@@ -1,0 +1,112 @@
+/* Variables */
+#ajustes {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  max-width: 800px;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #004aad;
+}
+#ajustes h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #004aad;
+  text-transform: uppercase;
+  border-bottom: 3px solid #ff6f61;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.form-ajustes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+.form-ajustes label {
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.form-ajustes input,
+.form-ajustes textarea {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 14px;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+.form-ajustes input:focus,
+.form-ajustes textarea:focus {
+  box-shadow: 0 0 8px rgba(0, 74, 173, 0.5);
+  border-color: #004aad;
+  outline: none;
+}
+.form-ajustes textarea {
+  min-height: 120px;
+  resize: none;
+}
+.form-ajustes button.btn-enviar {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.form-ajustes button.btn-enviar:hover {
+  background-color: #ff412e;
+  transform: translateY(-2px);
+}
+.form-ajustes button.btn-enviar:active {
+  background-color: #fa1600;
+  transform: translateY(1px);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  #ajustes {
+    padding: 30px 15px;
+  }
+  #ajustes h2 {
+    font-size: 1.8rem;
+  }
+  .form-ajustes input,
+  .form-ajustes textarea {
+    font-size: 13px;
+  }
+  .form-ajustes button.btn-enviar {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  #ajustes {
+    padding: 20px 10px;
+  }
+  #ajustes h2 {
+    font-size: 1.5rem;
+  }
+  .form-ajustes input,
+  .form-ajustes textarea {
+    font-size: 12px;
+  }
+  .form-ajustes button.btn-enviar {
+    font-size: 13px;
+    padding: 10px;
+  }
+}

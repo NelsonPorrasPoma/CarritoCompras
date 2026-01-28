@@ -1,0 +1,135 @@
+/* Variables */
+/* SECCIÓN LOGIN */
+#login {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  max-width: 400px;
+  margin: 60px auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  border-top: 5px solid #004aad;
+  animation: fadeIn 0.6s ease-in-out;
+}
+#login h1 {
+  text-align: center;
+  color: #004aad;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#login .login-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+}
+/* Formulario */
+.form-login {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-login label {
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+}
+.form-login input {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 14px;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.form-login input:focus {
+  border-color: #004aad;
+  box-shadow: 0 0 8px rgba(0, 74, 173, 0.5);
+  outline: none;
+}
+.form-login button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.form-login button:hover {
+  background-color: #ff412e;
+  transform: translateY(-2px);
+}
+.form-login button:active {
+  background-color: #fa1600;
+  transform: translateY(1px);
+}
+/* Mensaje de error */
+.error-message {
+  color: #e63922;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+}
+/* Enlace */
+.enlace {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+}
+.enlace a {
+  color: #004aad;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.enlace a:hover {
+  color: #ff6f61;
+  text-decoration: underline;
+}
+/* ANIMACIONES */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* RESPONSIVIDAD */
+@media (max-width: 768px) {
+  #login {
+    padding: 30px 15px;
+  }
+  #login h1 {
+    font-size: 1.5rem;
+  }
+  .form-login input,
+  .form-login button {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  #login {
+    padding: 20px 10px;
+  }
+  #login h1 {
+    font-size: 1.3rem;
+  }
+  .form-login input {
+    font-size: 12px;
+  }
+  .form-login button {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,154 @@
+/* Variables */
+/* Sección del carrito */
+#carrito {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  border-top: 5px solid #004aad;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  color: #004aad;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border-bottom: 3px solid #ff6f61;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+/* Tabla del carrito */
+.tabla-carrito {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.tabla-carrito th,
+.tabla-carrito td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+.tabla-carrito th {
+  background-color: #004aad;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.tabla-carrito tr:nth-child(even) {
+  background-color: #f4f4f4;
+}
+.tabla-carrito .img-carrito {
+  max-width: 80px;
+  height: auto;
+  border-radius: 5px;
+}
+/* Botones */
+.btn-actualizar,
+.btn-eliminar,
+.btn-pagar {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.btn-actualizar:hover,
+.btn-eliminar:hover,
+.btn-pagar:hover {
+  background-color: #ff412e;
+  transform: scale(1.05);
+}
+.btn-actualizar:active,
+.btn-eliminar:active,
+.btn-pagar:active {
+  background-color: #fa1600;
+}
+.btn-pagar {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #004aad;
+}
+.btn-pagar:hover {
+  background-color: #003580;
+}
+/* Resumen del carrito */
+.resumen-carrito {
+  text-align: right;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #333;
+}
+.resumen-carrito span {
+  font-weight: bold;
+  color: #ff6f61;
+}
+/* Formularios */
+.form-cantidad,
+.form-eliminar {
+  display: inline-block;
+  margin: 0;
+}
+input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+/* Animación para tabla */
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.tabla-carrito {
+  animation: slideIn 0.5s ease-in-out;
+}
+/* Responsividad */
+@media (max-width: 768px) {
+  .tabla-carrito th,
+  .tabla-carrito td {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .btn-actualizar,
+  .btn-eliminar,
+  .btn-pagar {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .img-carrito {
+    max-width: 60px;
+  }
+  .resumen-carrito {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  #carrito {
+    padding: 20px 10px;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .btn-pagar {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+}

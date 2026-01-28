@@ -1,0 +1,107 @@
+/* Variables */
+/* SECCIÓN PEDIDOS */
+#pedidos {
+  padding: 30px;
+  background-color: #f9f9f9;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.6s ease-in-out;
+}
+.contenido-pedidos {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.seccion-pedidos {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.seccion-pedidos h2 {
+  color: #004aad;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #ff6f61;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+/* Tabla de pedidos */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.table th,
+.table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 14px;
+}
+.table th {
+  background-color: #004aad;
+  color: #fff;
+  text-transform: uppercase;
+}
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.table tr:hover {
+  background-color: #f1f1f1;
+}
+/* Detalles desplegables */
+.detalles {
+  margin-top: 10px;
+  display: none;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  transition: all 0.3s ease;
+}
+.detalles.visible {
+  display: block;
+}
+/* Botón actualizar */
+.btn-actualizar {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+.btn-actualizar:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+.btn-actualizar:active {
+  background-color: #1e7e34;
+  transform: translateY(1px);
+}
+/* Responsividad */
+@media (max-width: 768px) {
+  .table th,
+  .table td {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+/* ANIMACIONES */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

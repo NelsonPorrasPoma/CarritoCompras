@@ -1,0 +1,56 @@
+echo "# ================================
+# JAVA / MAVEN
+# ================================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+.mvn/timing.properties
+
+# ================================
+# NODE.JS / FRONTEND
+# ================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+
+# ================================
+# IDE
+# ================================
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+bin/
+nbproject/
+
+# ================================
+# SISTEMA OPERATIVO
+# ================================
+.DS_Store
+Thumbs.db
+
+# ================================
+# BASE DE DATOS
+# ================================
+*.db
+*.sql
+*.sqlite
+
+# ================================
+# ARCHIVOS TEMPORALES
+# ================================
+*.tmp
+*.temp
+
+# ================================
+# ARCHIVOS DE CONFIGURACIÓN LOCAL
+# ================================
+application.properties
+application-local.properties" > .gitignore

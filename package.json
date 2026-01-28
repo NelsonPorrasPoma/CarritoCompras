@@ -1,0 +1,33 @@
+{
+    "name": "proyecto-final",
+    "version": "1.0.0",
+    "scripts": {
+        
+        "less:compile:batch1": "npm-run-all less:compile:1 less:compile:2 less:compile:3",
+        "less:compile:batch2": "npm-run-all less:compile:4 less:compile:5 less:compile:6",
+        "less:compile:batch3": "npm-run-all less:compile:7 less:compile:8 less:compile:9",
+        "less:compile:batch4": "npm-run-all less:compile:10 less:compile:11 less:compile:12 less:compile:13",
+        
+        "less:compile": "npm-run-all less:compile:batch1 less:compile:batch2 less:compile:batch3 less:compile:batch4",
+        
+        "less:compile:1": "lessc src/main/webapp/less/estilosAjustes.less src/main/webapp/css/estilosAjustes.css",
+        "less:compile:2": "lessc src/main/webapp/less/estilosAlmacen.less src/main/webapp/css/estilosAlmacen.css",
+        "less:compile:3": "lessc src/main/webapp/less/estilosCarrito.less src/main/webapp/css/estilosCarrito.css",
+        "less:compile:4": "lessc src/main/webapp/less/estilosContacto.less src/main/webapp/css/estilosContacto.css",
+        "less:compile:5": "lessc src/main/webapp/less/estilosGenerales.less src/main/webapp/css/estilosGenerales.css",
+        "less:compile:6": "lessc src/main/webapp/less/estilosLogin.less src/main/webapp/css/estilosLogin.css",
+        "less:compile:7": "lessc src/main/webapp/less/estilosNosotros.less src/main/webapp/css/estilosNosotros.css",
+        "less:compile:8": "lessc src/main/webapp/less/estilosPago.less src/main/webapp/css/estilosPago.css",
+        "less:compile:9": "lessc src/main/webapp/less/estilosPedidos.less src/main/webapp/css/estilosPedidos.css", 
+        "less:compile:10": "lessc src/main/webapp/less/estilosProductos.less src/main/webapp/css/estilosProductos.css",
+        "less:compile:11": "lessc src/main/webapp/less/estilosRegistro.less src/main/webapp/css/estilosRegistro.css",
+        "less:compile:12": "lessc src/main/webapp/less/estilosReporte.less src/main/webapp/css/estilosReporte.css", 
+        "less:compile:13": "lessc src/main/webapp/less/estilosUsuarios.less src/main/webapp/css/estilosUsuarios.css"
+    },
+    "devDependencies": {
+        "less": "^4.1.3",
+        "npm-run-all": "^4.1.5"
+    }
+}
+
+

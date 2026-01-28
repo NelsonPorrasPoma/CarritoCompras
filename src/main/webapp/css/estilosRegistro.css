@@ -1,0 +1,150 @@
+/* Variables */
+/* SECCIÓN REGISTRO */
+#registro {
+  width: 100%;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  border-top: 5px solid #004aad;
+  animation: fadeIn 0.6s ease-in-out;
+}
+#registro h2 {
+  text-align: center;
+  color: #004aad;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #ff6f61;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+#registro .registro-image {
+  display: block;
+  margin: 0 auto 15px;
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Formulario */
+.form-registro {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-registro label {
+  color: #333;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.form-registro input[type="text"],
+.form-registro input[type="email"],
+.form-registro input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.form-registro input[type="text"]:focus,
+.form-registro input[type="email"]:focus,
+.form-registro input[type="password"]:focus {
+  border-color: #004aad;
+  box-shadow: 0 0 8px rgba(0, 74, 173, 0.5);
+  outline: none;
+}
+.form-registro button {
+  padding: 12px 20px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.form-registro button:hover {
+  background-color: #ff412e;
+  transform: translateY(-2px);
+}
+.form-registro button:active {
+  background-color: #fa1600;
+  transform: translateY(1px);
+}
+/* Mensaje de error */
+.error-message {
+  color: #e63922;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+/* Enlace */
+.enlace {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 15px;
+}
+.enlace a {
+  color: #004aad;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.enlace a:hover {
+  color: #ff6f61;
+  text-decoration: underline;
+}
+/* ANIMACIONES */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* RESPONSIVIDAD */
+@media (max-width: 768px) {
+  #registro {
+    padding: 20px;
+    margin: 30px;
+  }
+  #registro h2 {
+    font-size: 1.6rem;
+  }
+  #registro .form-registro input[type="text"],
+  #registro .form-registro input[type="email"],
+  #registro .form-registro input[type="password"],
+  #registro .form-registro button {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  #registro {
+    padding: 20px;
+  }
+  #registro h2 {
+    font-size: 1.4rem;
+  }
+  #registro .form-registro input[type="text"],
+  #registro .form-registro input[type="email"],
+  #registro .form-registro input[type="password"] {
+    font-size: 12px;
+  }
+  #registro .form-registro button {
+    font-size: 14px;
+  }
+}
